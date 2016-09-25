@@ -1,4 +1,5 @@
-baseurl = "https://adriend.fr/"
+baseurl = "https://adriffaud.gitlab.io/"
+publishdir = "public"
 languageCode = "fr-fr"
 title = "Adrien Driffaud"
 author = "Adrien Driffaud"
