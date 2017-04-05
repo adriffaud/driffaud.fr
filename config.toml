@@ -1,56 +1,38 @@
-baseurl = "https://adriffaud.gitlab.io/"
-publishdir = "public"
+baseurl = "https://adriend.fr/"
 languageCode = "fr-fr"
 title = "Adrien Driffaud"
 author = "Adrien Driffaud"
-copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
-paginate = 10
-theme = "blackburn"
-
-[indexes]
-  tag = "tags"
-  topic = "topics"
+theme = "aerial"
 
 [params]
-  # Shown in the home page
-  subtitle = "Software Engineer / Web & Mobile Developer"
-  brand = "Blackburn"
-  googleAnalytics = "UA-44843905-2"
-  highlightjs = "androidstudio"
-  dateFormat = "02 Jan 2006, 15:04"
-  # Include any custom CSS and/or JS files
-  # (relative to /static folder)
-  # custom_css = ["css/my.css"]
-  # custom_js = ["js/my.js"]
+  name = "Adrien Driffaud"
+  about = "Software Development Engineer &nbsp;&bull;&nbsp; Web & Mobile developer"
+  copyright = "Untitled"
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = ""
+  favicon = "favicon.ico"
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 1
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
-    url = "/contact/"
+[[params.social]]
+  medium = "Twitter"
+  icon = "twitter"
+  link = "https://twitter.com/Eridan46"
 
-[social]
-  twitter = "Eridan46"
-  linkedin = "adrien-driffaud-270487b1"
-  github = "Eridan46"
+[[params.social]]
+  medium = "Facebook"
+  icon = "facebook"
+  link = "https://www.facebook.com/ad.driffaud"
+
+[[params.social]]
+  medium = "Instagram"
+  icon = "instagram"
+  link = "https://www.instagram.com/adriffaud/"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "https://github.com/Eridan46"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope-o"
+  link = "ad.driffaud@gmail.com"
