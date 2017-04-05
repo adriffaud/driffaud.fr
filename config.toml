@@ -1,15 +1,14 @@
-baseurl = "https://adriend.fr/"
+baseurl = "http://adriend.fr/"
 languageCode = "fr-fr"
 title = "Adrien Driffaud"
-author = "Adrien Driffaud"
 theme = "aerial"
 
 [params]
   name = "Adrien Driffaud"
-  about = "Software Development Engineer &nbsp;&bull;&nbsp; Web & Mobile developer"
+  about = "Software Development Engineer &nbsp;&bull;&nbsp; Web & Mobile"
   copyright = "Untitled"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
-  bg_scroll = ""
+  bg_scroll = "off"
   favicon = "favicon.ico"
 
 [[params.social]]
