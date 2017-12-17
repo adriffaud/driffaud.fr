@@ -10,18 +10,19 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Programming langages & technologies",
-    "Containers"
+    "Containers",
+    "Automation tools",
+    "Programming langages"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Licence Professionnelle SIG WEB"
+  course = "Bachelor degree in web Geographic Information Systems"
   institution = "IUT STID Carcassonne"
   year = 2012
 
 [[education.courses]]
-  course = "Licence Professionnelle Eclairage Public et Réseaux d'Energie"
+  course = "Bachelor degree in public lighting et power networks"
   institution = "ISFME St Affrique"
   year = 2011
  
@@ -29,4 +30,4 @@ weight = 5
 
 # Biography
 
-I am a software engineer at Sierra Wireless. I work on the AirVantage cloud platform.
+I am a software engineer at Sierra Wireless. I work for the [AirVantage](https://airvantage.net/) IoT cloud platform on data processing, APIs, internal tooling, automation and sometimes UI stuff in React.
