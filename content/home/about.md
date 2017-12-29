@@ -22,7 +22,7 @@ weight = 5
   year = 2012
 
 [[education.courses]]
-  course = "Bachelor degree in public lighting et power networks"
+  course = "Bachelor degree in public lighting and power networks"
   institution = "ISFME St Affrique"
   year = 2011
  
