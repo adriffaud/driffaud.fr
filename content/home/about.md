@@ -30,4 +30,4 @@ weight = 5
 
 # Biography
 
-I am a software engineer at Sierra Wireless. I work for the [AirVantage](https://airvantage.net/) IoT cloud platform on data processing, APIs, internal tooling, automation and sometimes UI stuff in React.
+I am a software engineer at Sierra Wireless. I work for the [AirVantage](https://airvantage.net/) IoT cloud platform on UI stuff in React, APIs, data processing, internal tooling, and automation.
