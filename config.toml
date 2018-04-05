@@ -8,6 +8,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
 
+googleAnalytics = "UA-44843905-2"
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubDir = false
 
