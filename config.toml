@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Adrien Driffaud"
-copyright = "&copy; 2017 Adrien Driffaud"
+copyright = "&copy; 2018 Adrien Driffaud"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
