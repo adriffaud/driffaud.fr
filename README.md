@@ -1,4 +1,4 @@
-adriend.fr
+driffaud.fr
 ==========
 
-My personnal website/blog, generated using [Hugo static site generator](https://gohugo.io/)
+My personnal website, generated using [Hugo static site generator](https://gohugo.io/)

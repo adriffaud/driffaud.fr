@@ -1,0 +1,47 @@
+[
+  {
+    "grouping": "Architecture",
+    "skills": [
+      "Load Balancing",
+      "Microservices",
+      "RESTful APIs",
+      "Single Page Applications"
+    ]
+  },
+  {
+    "grouping": "Languages, Operating Systems & Tools",
+    "skills": [
+      "Java",
+      "Golang",
+      "git",
+      "linux",
+      "bash",
+      "javascript",
+      "React"
+    ]
+  },
+  {
+    "grouping": "Platform Development & Administration",
+    "skills": [
+      "GitHub",
+      "AWS"
+    ]
+  },
+  {
+    "grouping": "Containers & Cloud",
+    "skills": [
+      {
+        "name": "Docker",
+        "link": "https://docker.com"
+      },
+      {
+        "name": "AWS",
+        "link": "https://aws.amazon.com"
+      },
+      {
+        "name": "Linux",
+        "link": "https://bosh.io"
+      }
+    ]
+  }
+]
