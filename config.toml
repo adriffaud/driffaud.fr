@@ -1,4 +1,4 @@
-baseURL = "https://driffaud.fr/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Adrien Driffaud"
 theme = "resume"
