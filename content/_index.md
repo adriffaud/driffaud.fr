@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Adrien Driffaud'
 sitemap:
   priority: 1.0
 
