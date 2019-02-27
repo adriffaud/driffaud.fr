@@ -2,13 +2,25 @@
   {
     "role": "Software development engineer",
     "company": "Sierra Wireless",
-    "summary": "Devops, infrastructure and tooling",
+    "summary": "Devops, infrastructure and tooling on AirVantage IoT platform.",
     "range": "April 2017 - Present"
   },
   {
     "role": "Software developer",
     "company": "Lomaco",
-    "summary": "Developed and maintained a fleet tracking and management web application",
+    "summary": "Developed and maintained a fleet tracking and management web application.",
     "range": "September 2012 - April 2017"
+  },
+  {
+    "role": "Apprentice software developer",
+    "company": "Fédération Départementale d'énergies du Lot",
+    "summary": "Developed an internal electrical network web mapping utility.",
+    "range": "September 2011 - September 2012"
+  },
+  {
+    "role": "Apprentice project manager",
+    "company": "Barde Sud-Ouest",
+    "summary": "Designed, planned and realized public lighting and building illumination projects.",
+    "range": "September 2010 - September 2011"
   }
 ]
