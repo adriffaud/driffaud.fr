@@ -106,6 +106,7 @@ h2 {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+    color: rgba(255,255,255,.8);
   }
 }
 
