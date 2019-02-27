@@ -13,7 +13,7 @@ theme = "resume"
     contactNote = "Software Development Engineer"
     profileImage = "img/avatar.jpg"
     email = "adrien@driffaud.fr"
-    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
+    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms in the cloud."
     # favicon = "images/favicon.ico"
     # what sections
     showSkills = true
@@ -22,7 +22,7 @@ theme = "resume"
     showPublications = false
     showExperience = true
     showEducation = true
-
+    showBlog = false
     showQr = true
 
 [[params.handles]]

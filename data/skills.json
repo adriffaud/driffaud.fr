@@ -13,11 +13,13 @@
     "skills": [
       "Java",
       "Golang",
-      "git",
-      "linux",
-      "bash",
       "javascript",
-      "React"
+      "React",
+      "postgresql",
+      "mysql",
+      "linux",
+      "git",
+      "bash"
     ]
   },
   {
@@ -30,18 +32,9 @@
   {
     "grouping": "Containers & Cloud",
     "skills": [
-      {
-        "name": "Docker",
-        "link": "https://docker.com"
-      },
-      {
-        "name": "AWS",
-        "link": "https://aws.amazon.com"
-      },
-      {
-        "name": "Linux",
-        "link": "https://bosh.io"
-      }
+      "Docker",
+      "AWS",
+      "Linux"
     ]
   }
 ]
