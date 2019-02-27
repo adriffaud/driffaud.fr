@@ -4,7 +4,9 @@ date: 2019-02-27T14:53:53+01:00
 featured: true
 description: "A fleet tracking and management web application."
 tags: ["Java", "React", "Spring", "PostgreSQL"]
-image: "img/exdat.png"
+resources:
+- name: thumbnail
+  src: exdat.png
 link: "https://www.exdat.fr"
 weight: 500
 sitemap:
