@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Adrien Driffaud"
 theme = "resume"
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [blackfriday]
     hrefTargetBlank = true
 
@@ -17,7 +20,7 @@ theme = "resume"
     # favicon = "images/favicon.ico"
     # what sections
     showSkills = true
-    showProjects = false
+    showProjects = true
     showOpenSource = false
     showPublications = false
     showExperience = true
