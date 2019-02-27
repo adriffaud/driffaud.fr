@@ -8,6 +8,7 @@ theme = "resume"
 
 [blackfriday]
     hrefTargetBlank = true
+    noreferrerLinks = true
 
 [params]
     firstName = "Adrien"
