@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  src: local('Saira ExtraCondensed Medium'), local('SairaExtraCondensed-Medium'), url('/fonts/SairaExtraCondensed-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  src: local('Saira ExtraCondensed Bold'), local('SairaExtraCondensed-Bold'), url('/fonts/SairaExtraCondensed-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
