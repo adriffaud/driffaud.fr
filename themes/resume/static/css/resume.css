@@ -1,26 +1,5 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans'), url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Saira Extra Condensed';
-  src: local('Saira ExtraCondensed Medium'), local('SairaExtraCondensed-Medium'), url('/fonts/SairaExtraCondensed-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Saira Extra Condensed';
-  src: local('Saira ExtraCondensed Bold'), local('SairaExtraCondensed-Bold'), url('/fonts/SairaExtraCondensed-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
-  font-family: 'Open Sans', serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding-top: 54px;
   color: #868e96;
 }
@@ -42,7 +21,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   color: #343a40;
 }
@@ -53,8 +31,9 @@ h1, h2{
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 5.5rem;
+  letter-spacing: -0.2rem;
 }
 
 h2 {
@@ -64,8 +43,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+  font-size: 1rem;
 }
 
 .list-social-icons a {
