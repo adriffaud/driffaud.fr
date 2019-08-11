@@ -28,6 +28,7 @@ theme = "resume"
     showExperience = true
     showEducation = true
     showBlog = false
+    showGallery = true
     showQr = true
 
 [[params.handles]]

@@ -138,6 +138,16 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+section.gallery-section {
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media (min-width: 768px) {
+  section.gallery-section {
+    min-height: 100vh;
+  }
+}
+
 .bg-primary {
   background-color: #3f51b5 !important;
 }
