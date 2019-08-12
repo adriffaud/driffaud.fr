@@ -11,4 +11,4 @@ sitemap:
 
 To get better at photography, I decided to challenge myself to take one picture every day. These photos are direct from the camera unedited. That's all!
 
-{{< gallery dir="img/1p1d" caption-effect="none" >}}
+{{< gallery caption-effect="none" >}}
