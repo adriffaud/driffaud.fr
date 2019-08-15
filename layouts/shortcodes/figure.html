@@ -1,5 +1,8 @@
 <!-- count how many times we've called this shortcode; load the css if it's the first time -->
-{{- if not ($.Page.Scratch.Get "figurecount") }}<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />{{ end }}
+{{- if not ($.Page.Scratch.Get "figurecount") }}
+	{{ $style := resources.Get "/css/hugo-easy-gallery.css" | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
 {{- $.Page.Scratch.Add "figurecount" 1 -}}
 
 <!-- use either src or link-thumb for thumbnail image -->

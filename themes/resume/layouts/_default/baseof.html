@@ -47,9 +47,11 @@
   
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="/js/load-photoswipe.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="/js/resume.js"></script>
+    {{ $photoswipe := resources.Get "js/load-photoswipe.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $photoswipe.Permalink }}"></script>
+    {{ $resume := resources.Get "js/resume.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $resume.Permalink }}"></script>
 
   {{ block "footerfiles" . }}
 
