@@ -28,8 +28,8 @@ theme = "resume"
     showExperience = true
     showEducation = true
     showBlog = false
-    showGallery = true
-    showQr = true
+    showGallery = false
+    showQr = false
 
 [[params.handles]]
     name = "GitHub"
