@@ -1,0 +1,121 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Iosevka Fixed SS14';
+}
+
+h1,
+h2 {
+  color: #c792ea;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  --text-color: #82aaff;
+  --background-color: #282b3c;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1em;
+  padding-top: 32px;
+  line-height: 1.5em;
+}
+
+/* Navbar */
+/* ========================================================================== */
+nav {
+  border-right: 1px solid black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 100vh;
+}
+
+nav .navbar-brand {
+  display: flex;
+  margin: auto auto 0;
+  padding: 0.5rem;
+}
+
+nav .navbar-brand .img-profile {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid #676e95;
+}
+
+nav > div {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 0;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: block;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+/* Content */
+/* ========================================================================== */
+main {
+  border: 1px solid red;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 32px;
+  width: 70%;
+  max-width: 960px;
+}
+
+footer {
+  border: 1px solid red;
+  text-align: center;
+}
+
+a {
+  color: #ffcb6b;
+}
+
+.color-display {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+pre code {
+  display: block;
+  padding: 0.5em;
+  overflow-wrap: normal;
+  white-space: pre;
+  border: 1px solid black;
+}
+
+code {
+  color: #89ddff;
+}
