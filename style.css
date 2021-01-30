@@ -2,14 +2,19 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-family: 'Iosevka Fixed SS14';
+h5 {
+  border-bottom: 2px solid #c792ea;
 }
 
-h1,
+h1 {
+  font-size: 2.5em;
+  /* border-bottom: 2px solid #c792ea; */
+  max-width: 84%;
+}
+
 h2 {
-  color: #c792ea;
+  font-size: 2em;
+  max-width: 63%;
 }
 
 a {
@@ -22,75 +27,46 @@ body {
 
   color: var(--text-color);
   background-color: var(--background-color);
-  font-family: 'Fira Code', monospace;
+  font-family: 'Hack', 'Fira Code', 'Consolas', monospace;
   font-size: 1.1em;
-  padding-top: 32px;
-  line-height: 1.5em;
-}
+  margin: 0;
+  padding: 1em;
+  line-height: 1.75;
 
-/* Navbar */
-/* ========================================================================== */
-nav {
-  border-right: 1px solid black;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
-  width: 25rem;
-  height: 100vh;
 }
 
-nav .navbar-brand {
+header {
   display: flex;
-  margin: auto auto 0;
-  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
 }
 
-nav .navbar-brand .img-profile {
-  max-width: 10rem;
-  max-height: 10rem;
-  border: 0.5rem solid #676e95;
+header h1 {
+  flex: 1;
 }
 
-nav > div {
-  display: flex;
-  align-items: flex-start;
-  flex-grow: 0;
-  width: 100%;
-  margin-bottom: auto;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-left: 0;
-}
-
-nav ul li {
-  display: block;
-  list-style: none;
-}
-
-nav ul li a {
-  display: block;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0.5rem;
+header img {
+  border-radius: 100px;
+  border: 2px solid #676e95;
+  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0px 8px 10px -7px rgba(0, 0, 0, 0.2);
 }
 
 /* Content */
 /* ========================================================================== */
 main {
-  border: 1px solid red;
   position: relative;
   display: block;
   margin: auto;
-  padding: 32px;
-  width: 70%;
-  max-width: 960px;
+  max-width: 80ch; /* works because I use a monospace font */
+}
+
+main nav a::before {
+  content: '→ ';
+  color: #336699;
 }
 
 footer {
