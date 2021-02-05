@@ -1,8 +1,5 @@
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   border-bottom: 2px solid #c792ea;
 }
 
@@ -94,4 +91,39 @@ pre code {
 
 code {
   color: #89ddff;
+}
+
+@media (max-width: 960px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  main {
+    min-width: 80ch;
+  }
+}
+
+.about li {
+  display: inline-block;
+}
+
+.about li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.about img {
+  width: 16px;
+  height: 16px;
+  vertical-align: sub;
+}
+
+.about em {
+  color: #89ddff;
+}
+
+.about span {
+  float: right;
+  color: #a9c77d;
 }
