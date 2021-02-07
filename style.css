@@ -1,0 +1,129 @@
+h1,
+h2 {
+  border-bottom: 2px solid #c792ea;
+}
+
+h1 {
+  font-size: 2.5em;
+  /* border-bottom: 2px solid #c792ea; */
+  max-width: 84%;
+}
+
+h2 {
+  font-size: 2em;
+  max-width: 63%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  --text-color: #82aaff;
+  --background-color: #282b3c;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Hack', 'Fira Code', 'Consolas', monospace;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 1em;
+  line-height: 1.75;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+header h1 {
+  flex: 1;
+}
+
+header img {
+  border-radius: 100px;
+  border: 2px solid #676e95;
+  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0px 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
+/* Content */
+/* ========================================================================== */
+main {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 80ch; /* works because I use a monospace font */
+}
+
+main nav a::before {
+  content: '→ ';
+  color: #336699;
+}
+
+footer {
+  border: 1px solid red;
+  text-align: center;
+}
+
+a {
+  color: #ffcb6b;
+}
+
+.color-display {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+pre code {
+  display: block;
+  padding: 0.5em;
+  overflow-wrap: normal;
+  white-space: pre;
+  border: 1px solid black;
+}
+
+code {
+  color: #89ddff;
+}
+
+@media (max-width: 960px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  main {
+    min-width: 80ch;
+  }
+}
+
+.about li {
+  display: inline-block;
+}
+
+.about li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.about img {
+  width: 16px;
+  height: 16px;
+  vertical-align: sub;
+}
+
+.about em {
+  color: #89ddff;
+}
+
+.about span {
+  float: right;
+  color: #a9c77d;
+}
