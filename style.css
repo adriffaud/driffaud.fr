@@ -13,10 +13,6 @@ h2 {
   max-width: 63%;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   --text-color: #82aaff;
   --background-color: #282b3c;
@@ -60,11 +56,6 @@ main {
   display: block;
   margin: auto;
   max-width: 80ch; /* works because I use a monospace font */
-}
-
-main nav a::before {
-  content: '→ ';
-  color: #336699;
 }
 
 footer {
