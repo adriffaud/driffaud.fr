@@ -25,9 +25,10 @@ body {
   background-color: var(--background-color);
   font-family: 'Hack', 'Fira Code', 'Consolas', monospace;
   font-size: 1.1em;
-  margin: 0;
+  margin: 0 auto;
   padding: 1em;
   line-height: 1.75;
+  max-width: 960px;
 
   display: flex;
   flex-direction: column;
