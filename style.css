@@ -58,6 +58,10 @@ main {
   max-width: 80ch; /* works because I use a monospace font */
 }
 
+nav ul li {
+  list-style-type: '→ ';
+}
+
 footer {
   border: 1px solid red;
   text-align: center;
