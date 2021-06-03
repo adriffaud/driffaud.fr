@@ -24,8 +24,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags:
-            - eridan/driffaud.fr:latest
-            - eridan/driffaud.fr:$(date +%s)
+          tags: |
+            eridan/driffaud.fr:latest
+            eridan/driffaud.fr:$(date +%s)
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
