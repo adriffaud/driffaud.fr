@@ -2,6 +2,8 @@
 
 My personal website.
 
+![Visualization of the codebase](./diagram.svg)
+
 ## Color palette
 
 Palenight :
