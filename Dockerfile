@@ -1,3 +1,8 @@
-ARG ARCH=
-FROM ${ARCH}nginx
-COPY . /usr/share/nginx/html
+FROM alpine:3.16 as build
+COPY . /app
+WORKDIR /app
+RUN apk add -U zola
+RUN zola build
+
+FROM nginx:1.23-alpine
+COPY --from=build /app/public /usr/share/nginx/html
