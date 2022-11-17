@@ -1,4 +1,4 @@
-FROM alpine:3.16 as build
+FROM alpine:edge as build
 COPY . /app
 WORKDIR /app
 RUN apk add -U zola
