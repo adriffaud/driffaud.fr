@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+  <p>
+    I am a backend and infrastructure developer at <strong>Airnity</strong>.
+  </p>
+  <p>
+    I work on the
+    <a href="https://www.airnity.com" target="_blank" rel="noopener noreferrer">Airnity cellular connectivity
+      platform</a>, on backend in <strong>Elixir</strong>, internal tooling, cloud automation and architecture on
+    <strong>AWS</strong> with <strong>Terraform</strong> and <strong>Kubernetes</strong>.
+  </p>
+
+  <h2>Links</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ get_url(path='about') }}">About me</a></li>
+      <li><a href="https://github.com/adriffaud/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </nav>
+</main>
+{% endblock content %}
