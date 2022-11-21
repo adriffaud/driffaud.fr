@@ -101,6 +101,11 @@ code {
   }
 }
 
+.about div {
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
 .about li {
   display: inline-block;
 }
