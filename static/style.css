@@ -30,18 +30,18 @@ body {
   flex-direction: column;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2em;
 }
 
-header h1 {
+.header h1 {
   flex: 1;
 }
 
-header img {
+.header img {
   width: 160px;
   border-radius: 100px;
   border: 2px solid #676e95;

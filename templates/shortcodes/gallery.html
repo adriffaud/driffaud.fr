@@ -1,0 +1,19 @@
+<div>
+  {% for asset in page.assets -%}
+  {%- if asset is matching("[.](jpg|png)$") -%}
+  {% set image = resize_image(path=asset, width=240, height=180) %}
+  {% set meta = get_image_metadata(path=asset) %}
+  <a href="{{ get_url(path=asset) }}" target="_blank"><img src="{{ image.url }}" /></a>
+  {%- endif %}
+  {%- endfor %}
+
+  <script type="module">
+    import PhotoSwipeLightbox from '{{ get_url(path="@/static/photoswipe-lightbox.esm.js") }}';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#my-gallery',
+      children: 'a',
+      pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+    });
+    lightbox.init();
+  </script>
+</div>
