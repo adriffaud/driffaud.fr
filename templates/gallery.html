@@ -8,7 +8,7 @@
         {% for page in section.pages %}
             {% for asset in page.assets -%}
                 {%- if asset is matching("[.](jpg|png)$") -%}
-                    {% set image = resize_image(path=asset, width=640, height=480) %}
+                    {% set image = resize_image(path=asset, width=800, height=700) %}
                     <article style="background-image: url({{ image.url }})">
                         <a href="{{ page.permalink | safe }}">
                             <div>
