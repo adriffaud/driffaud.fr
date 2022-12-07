@@ -2,8 +2,23 @@
 
 {% block content %}
 <main>
-    <h1>{{ page.title }}</h1>
+    <h1>{{ section.title }}</h1>
 
-    {{ page.content | safe }}
+    <section class="grid">
+        {% for page in section.pages %}
+            {% for asset in page.assets -%}
+                {%- if asset is matching("[.](jpg|png)$") -%}
+                    {% set image = resize_image(path=asset, width=640, height=480) %}
+                    <article style="background-image: url({{ image.url }})">
+                        <a href="{{ page.permalink | safe }}">
+                            <div>
+                                <h2>{{ page.title }}</h2>
+                            </div>
+                        </a>
+                    </article>
+                {%- endif %}
+            {% endfor %}
+        {% endfor %}
+    </section>
 </main>
 {% endblock content %}
