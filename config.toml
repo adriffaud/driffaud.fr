@@ -1,5 +1,5 @@
-# The URL the site will be built for
 base_url = "https://driffaud.fr"
+title = "Adrien Driffaud"
 
 [markdown]
 # Whether to do syntax highlighting
