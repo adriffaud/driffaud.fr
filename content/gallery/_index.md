@@ -1,5 +1,7 @@
----
-title: "Gallery"
-sitemap:
-  priority : 0.9
----
++++
+title = "Gallery"
+sort_by = "date"
+template = "gallery.html"
+page_template = "gallery-image.html"
++++
+
