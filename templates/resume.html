@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block title %}
+  {{super()}}
+  {% set title_addition = title_separator ~ config.title %}
+  {{ macros_head::title(title="Resume", title_addition=title_addition) }}
+{% endblock title %}
+
 {% block content %}
 <main class="about">
   <h1>Resume</h1>
