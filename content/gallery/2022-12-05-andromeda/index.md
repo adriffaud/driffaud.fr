@@ -1,10 +1,11 @@
 +++
 title = "Andromeda galaxy"
-slug = "2022-12-05-andromeda"
+slug = "2022-12-05_andromeda"
 +++
 
-![Andromeda Galaxy picture](andromeda.jpg)
-*Andromeda Galaxy*, shot from my backyard in Colomiers, France in December 2022 (<a href="andromeda.jpg" target="_blank">full size image</a>)
+{{ resize_image() }}
+
+*Andromeda Galaxy*, shot from my backyard in Colomiers, France in December 2022
 
 ---
 
