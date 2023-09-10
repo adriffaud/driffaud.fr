@@ -1,33 +1,30 @@
-{% extends "base.html" %}
+{%- extends "base.html" -%}
 
-{% block title %}
-  {{ macros_head::title(title=config.title) }}
-{% endblock title %}
+{%- block title %}
+  {%- if config.title %}
+    {%- set title = config.title %}
+  {%- else %}
+    {%- set title = "" %}
+  {%- endif %}
 
-{% block content %}
+  {%- if config.extra.title_addition and title %}
+    {%- set title_addition = title_separator ~ config.extra.title_addition %}
+  {%- elif config.extra.title_addition %}
+    {%- set title_addition = config.extra.title_addition %}
+  {%- else %}
+    {%- set title_addition = "" %}
+  {%- endif %}
+
+  {{ macros_head::title(title=title,title_addition=title_addition) }}
+{% endblock title -%}
+
+{%- block content -%}
 <main>
   <section class="header">
     <h1>Adrien Driffaud</h1>
     <img src="{{ get_url(path='img/avatar.webp') }}" alt="Avatar" width="164" height="164" />
   </section>
 
-  <p>
-    I am a backend and infrastructure developer at <strong>Airnity</strong>.
-  </p>
-  <p>
-    I work on the
-    <a href="https://www.airnity.com" target="_blank" rel="noopener noreferrer">Airnity cellular connectivity
-      platform</a>, on backend in <strong>Elixir</strong>, internal tooling, cloud automation and architecture on
-    <strong>AWS</strong> with <strong>Terraform</strong> and <strong>Kubernetes</strong>.
-  </p>
-
-  <h2>Links</h2>
-  <nav>
-    <ul>
-      <li><a href="{{ get_url(path='resume.pdf') }}" target="_blank">Resume</a></li>
-      <li><a href="https://github.com/adriffaud/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/adrien-driffaud/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    </ul>
-  </nav>
+  {{- section.content | safe -}}
 </main>
-{% endblock content %}
+{%- endblock content -%}

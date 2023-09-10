@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{%- block title -%}
+  {{- super() -}}
+  {%- set title_addition = "" -%}
+  {%- if section.title and config.title %}
+    {%- set title = section.title -%}
+    {%- set title_addition = title_separator ~ config.title -%}
+  {%- elif section.title %}
+    {%- set title = section.title -%}
+  {%- else -%}
+    {%- set title = config.title -%}
+  {%- endif -%}
+
+  {{ macros_head::title(title=title,title_addition=title_addition) }}
+{%- endblock title -%}
+
+{%- block content -%}
+<main>
+  <h1>{{ section.title }}</h1>
+
+  {{- section.content | safe -}}
+
+  
+  <h2>{{ trans(key="gallery", lang=lang) }}</h2>
+  <section class="grid">
+    {%- for page in section.pages %}
+    {%- for asset in page.assets -%}
+    {%- if asset is matching("[.](jpg|png)$") -%}
+    {% set image = resize_image(path=asset, width=800, height=700) %}
+    <article style="background-image: url({{ image.url }})">
+      <a href="{{ page.permalink | safe }}">
+        <div>
+          <h2>{{ page.title }}</h2>
+        </div>
+      </a>
+    </article>
+    {%- endif %}
+    {%- endfor %}
+    {%- endfor %}
+  </section>
+</main>
+{%- endblock content -%}
